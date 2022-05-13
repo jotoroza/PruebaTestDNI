@@ -1,0 +1,1 @@
+{"version":1,"defects":{"DniTest::testShouldFailWhenDniLongerThanMaxLenght":3,"Tests\\Dojo\\DniTest::testShouldFailWhenDniLongerThanMaxLenght":3},"times":{"StackTest::testPushAndPop":0.005,"DniTest::testShouldFailWhenDniLongerThanMaxLenght":0.025,"Tests\\Dojo\\DniTest::testShouldFailWhenDniLongerThanMaxLenght":0.006}}
