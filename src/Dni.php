@@ -8,14 +8,19 @@ use LengthException;
 
 class Dni
 {
+    private const VALID_LENGTH = 9;
+
     public function __construct(string $dni)
     {
-        if (strlen($dni) > 9) {
-            throw new LengthException('Too long');
-        }
-        if (\strlen($dni) < 9) {
-            throw new LengthException('Too short');
-        }
+        $this->checkDniHasValidLength($dni);
+
         throw new \DomainException('Ends with number');
+    }
+
+    private function checkDniHasValidLength(string $dni): void
+    {
+        if (strlen($dni) !== self::VALID_LENGTH) {
+            throw new LengthException('Too long or Too short');
+        }
     }
 }
